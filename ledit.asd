@@ -6,7 +6,7 @@
 (in-package :cl-user)
 
 (defpackage :ledit-asd
-  (:use :cl :asdf))
+  (:use :cl :asdf :assoc-utils))
 
 (in-package :ledit-asd)
 
