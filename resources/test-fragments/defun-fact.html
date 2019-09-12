@@ -1,0 +1,33 @@
+<!-- in theory this should exactly translate into `defun-fact.lisp`, q.v. -->
+
+<div class="sexpr list">
+  <var class="sexpr symbol">defun</var>
+  <var class="sexpr symbol">fact</var>
+  <div class="sexpr list">
+    <var class="sexpr symbol">n</var>
+  </div>
+  <div class="sexpr list">
+    <var class="sexpr symbol">cond</var>
+    <div class="sexpr list">
+      <div class="sexpr list">
+        <var class="sexpr symbol">zerop</var>
+        <var class="sexpr symbol">n</var>
+      </div>
+      <code class="sexpr number">1</code>
+    </div>
+    <div class="sexpr list">
+      <var class="sexpr symbol">t</var>
+      <div class="sexpr list">
+        <var class="sexpr symbol">*</var>
+        <var class="sexpr symbol">n</var>
+        <div class="sexpr list">
+          <var class="sexpr symbol">fact</var>
+          <div class="sexpr list">
+            <var class="sexpr symbol">1-</var>
+            <var class="sexpr symbol">n</var>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
